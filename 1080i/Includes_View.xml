@@ -273,6 +273,28 @@
         </control>
     </include>
 
+    <include name="View_RatingOverlay">
+            <!-- <visible>!Skin.HasSetting(DisableWatchedOverlay)</visible> -->
+            <control type="image">
+                <bottom>10</bottom>
+                <right>10</right>
+                <width>48</width>
+                <height>48</height>
+                <texture colordiffuse="ff000000" border="10">$VAR[Image_Overlay_Corner_Bottom]</texture>
+            </control>
+            <control type="label">
+                <bottom>10</bottom>
+                <right>10</right>
+                <width>30</width>
+                <height>28</height>
+                <font>font_unwatched</font>
+                <align>center</align>
+                <textcolor>ffededed</textcolor>
+                <label>$INFO[ListItem.Rating]</label>
+                <!-- <include>View_UnwatchedEpisodes_Visible</include> -->
+            </control>
+    </include>
+
     <include name="View_WatchedOverlay">
         <include condition="Skin.HasSetting(LightWatchedOverlay)">View_WatchedOverlay_White</include>
         <include condition="!Skin.HasSetting(LightWatchedOverlay)">View_WatchedOverlay_Black</include>

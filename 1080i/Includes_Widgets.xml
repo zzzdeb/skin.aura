@@ -1111,6 +1111,7 @@
                     <include condition="$PARAM[landscape] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Landscape</include>
                 </control>
                 <include>View_WatchedOverlay</include>
+                <include>View_RatingOverlay</include>
                 <control type="image">
                     <bordersize>10</bordersize>
                     <texture colordiffuse="PixelLines" border="20">common/outline.png</texture>
@@ -1165,6 +1166,7 @@
                     <include condition="$PARAM[landscape] + !$PARAM[studios] + !$PARAM[genres] + !$PARAM[text]">Widget_Items_Landscape</include>
                 </control>
                 <include>View_WatchedOverlay</include>
+                <include>View_RatingOverlay</include>
                 <control type="group">
                     <include>View_Selectbox</include>
                 </control>

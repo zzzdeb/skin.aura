@@ -123,6 +123,10 @@
         <value condition="Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + [Container.Content(tvshows) | Container.Content(seasons) | Window.IsVisible(Home)]">indicator/corner.png</value>
     </variable>
 
+    <variable name="Image_Overlay_Corner_Bottom">
+        <value>indicator/corner_bottom.png</value>
+    </variable>
+
     <variable name="Image_Poster">
         <value condition="Skin.HasSetting(SkinHelper.EnableAnimatedPosters) + !String.IsEmpty(ListItem.Art(animatedposter))">$INFO[ListItem.Art(animatedposter)]</value>
         <!-- <value condition="Skin.HasSetting(SkinHelper.EnableAnimatedPosters) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.AnimatedPoster))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.AnimatedPoster)]</value> -->
