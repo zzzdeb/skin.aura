@@ -531,9 +531,29 @@
                     <visible>!Skin.HasSetting(WidgetsLabel.DisableTvShowTitle)</visible>
                 </control>
                 <control type="label">
+                    <width>auto</width>
+                    <label>$VAR[Label_Premiered_Year]</label>
+                    <height>40</height>
+                    <aligny>top</aligny>
                     <textcolor>main_fg_70</textcolor>
-                    <label>$INFO[Container($PARAM[id]).ListItem.Label]</label>
                     <include>Statusbar_Menubar_Items</include>
+                    <visible>Control.HasFocus($PARAM[id])</visible>
+                </control>
+                <control type="image">
+                    <texture colordiffuse="$VAR[ColorHighlight]">common/white.png</texture>
+                    <width>3</width>
+                    <top>10</top>
+                    <bottom>8</bottom>
+                    <visible>Control.HasFocus($PARAM[id])</visible>
+                </control>
+                <control type="label">
+                    <width>auto</width>
+                    <label>$VAR[Label_Duration]</label>
+                    <height>40</height>
+                    <aligny>top</aligny>
+                    <textcolor>main_fg_70</textcolor>
+                    <include>Statusbar_Menubar_Items</include>
+                    <font>font_small</font>
                     <visible>Control.HasFocus($PARAM[id])</visible>
                 </control>
                 <control type="label">
@@ -552,6 +572,20 @@
                     <visible>!String.IsEqual(Container($PARAM[id]).ListItem.Label,Container($PARAM[id]).ListItem.Artist) + !String.IsEmpty(Container($PARAM[id]).ListItem.Artist)</visible>
                     <visible>!Skin.HasSetting(WidgetsLabel.DisableArtist)</visible>
                 </control>
+            </control>
+        </definition>
+    </include>
+
+    <include name="Widget_Foot">
+        <definition>
+            <control type="grouplist">
+                <top>widget_foot_top</top>
+                <left>70</left>
+                <height>40</height>
+                <orientation>horizontal</orientation>
+                <usecontrolcoords>true</usecontrolcoords>
+                <itemgap>16</itemgap>
+                <visible>Control.HasFocus($PARAM[id])</visible>
             </control>
         </definition>
     </include>
