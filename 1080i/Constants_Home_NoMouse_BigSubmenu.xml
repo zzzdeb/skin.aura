@@ -4,7 +4,7 @@
     <constant name="widget_spacer_bottom">-210</constant>
     <constant name="widget_submenu_spacer">390</constant>
     <constant name="widget_submenu_big_spacer">430</constant>
-    <constant name="widget_poster_spacer">640</constant>
+    <constant name="widget_poster_spacer">540</constant>
     <constant name="widget_gap">-650</constant>
     <constant name="widget_top">440</constant>
 
